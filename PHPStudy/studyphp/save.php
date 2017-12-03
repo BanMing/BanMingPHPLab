@@ -1,7 +1,9 @@
 ﻿<?php
+include('MsgStruct.php');
 var_dump($_POST);
 
-$msg=$_POST('msg');
-$user=$_POST('user');
+$msg= new MsgStruct($_POST);
+
+var_dump($msg);
 
 ?>
